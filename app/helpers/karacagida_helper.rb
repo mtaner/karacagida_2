@@ -1,0 +1,2 @@
+module KaracagidaHelper
+end
