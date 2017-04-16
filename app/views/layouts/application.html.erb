@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Karacagida2</title>
+    <title>Karacagida</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <nav>
+      <a href="/">Ana Sayfa</a>
+      <a href="/about_us">Hakkımızda</a>
+      <a href="/certificates">Kalite</a>
+      <a href="/products">Ürünler</a>
+      <a href="/production">Üretim</a>
+      <a href="/social_contribution">Sosyal Sorumluluk</a>
+      <a href="/contact">İletişim</a>
+    </nav>
     <%= yield %>
   </body>
 </html>
