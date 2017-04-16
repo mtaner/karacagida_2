@@ -1,153 +1,93 @@
 <h2>Ürünler</h2>
-		<?php
-			if( $_GET['ID'] == 1 or !isset($_GET['ID']) ){
-		?>
-    	<div id="Product">
-        	<h3>Mine 1</h3>
-      		<img src="<%= asset_url('products/Mine-1.jpg')%>" width="352" height="352" alt="Mine 1 Külah" />
-            <div id="Adet">
-        		<span>420 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 2 ){
-		?>
-        <div id="Product">
-        	<h3>Mine 2</h3>
-      		<img src="<%= asset_url('products/Mine-2.jpg')%>" width="352" height="352" alt="Mine 2 Külah" />
-            <div id="Adet">
-        		<span>330 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 3 ){
-		?>
-        <div id="Product">
-        	<h3>Mine 3</h3>
-      		<img src="<%= asset_url('products/Mine-3.jpg')%>" width="352" height="352" alt="Mine 3 Külah" />
-            <div id="Adet">
-        		<span>300 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 4 ){
-		?>
-        <div id="Product">
-        	<h3>Altın Petek</h3>
-      		<img src="<%= asset_url('products/Altin-Petek.jpg')%>" width="352" height="352" alt="Altın Petek Külah" />
-            <div id="Adet">
-        		<span>280 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 5 ){
-		?>
-        <div id="Product">
-        	<h3>Petekli Kornet</h3>
-      		<img src="<%= asset_url('products/Petekli-Kornet.jpg')%>" width="352" height="352" alt="Petekli Kornet Külah" />
-            <div id="Adet">
-        		<span>280 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 6 ){
-		?>
-        <div id="Product">
-        	<h3>Küçük Lale</h3>
-      		<img src="<%= asset_url('products/Kucuk-Lale.jpg')%>" width="352" height="352" alt="Küçük Lale Külah" />
-            <div id="Adet">
-        		<span>300 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 7 ){
-		?>
-        <div id="Product">
-        	<h3>Büyük Lale</h3>
-      		<img src="<%= asset_url('products/Buyuk-Lale.jpg')%>" width="352" height="352" alt="Büyük Lale Külah" />
-            <div id="Adet">
-        		<span>240 Adet</span>
-        	</div>
-            <div class="clear"></div>
-       	</div>
-       	<?php
-			}
-			if( $_GET['ID'] == 8 ){
-		?>
-        <div id="Product">
-        	<h3>Sarma Kornet</h3>
-      		<img src="<%= asset_url('products/Sarma-Kornet.jpg')%>" width="352" height="352" alt="Sarma Kornet Külah" />
-            <div id="Adet">
-        		<span>150 Adet</span>
-        	</div>
-            <div class="clear"></div>
-       	</div>
-       	<?php
-			}
-			if( $_GET['ID'] == 9 ){
-		?>
-        <div id="Product">
-        	<h3>Endüstriyel Sarma Kornet</h3>
-      		<img src="<%= asset_url('products/endustriyel-sarma-kornet.jpg')%>" width="352" height="352" alt="Endüstriyel Sarma Kornet Külah" />
-            <div id="Adet">
-        		<span>600 Adet</span>
-        	</div>
-            <div id="Adet">
-                <span>720 Adet</span>
-            </div>
-            <div class="clear"></div>
-       	</div>
-       	<?php
-			}
-			if( $_GET['ID'] == 10 ){
-		?>
-<!--
-        <div id="Product">
-        	<h3>Küçük Küp Reçellik</h3>
-      		<img src="Template/Image/Content/Products/kucuk-kup-recellik.jpg" width="352" height="352" alt="Küçük Küp Reçellik Külah" />
-            <div id="Adet">
-        		<span>480 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-        -->
-       	<?php
-			}
-			if( $_GET['ID'] == 11 ){
-		?>
-        <div id="Product">
-        	<h3>Küp Reçellik</h3>
-      		<img src="<%= asset_url('products/buyuk-kup-recellik.jpg')%>" width="352" height="352" alt="Büyük Küp Reçellik Külah" />
-            <div id="Adet">
-        		<span>400 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-			if( $_GET['ID'] == 12 ){
-		?>
-        <div id="Product">
-        	<h3>Kağıt Helva</h3>
-      		<img src="<%= asset_url('products/kagit-helva.jpg')%>" width="352" height="352" alt="Kağıt Helva" />
-        	<div id="Adet">
+<div style="display:flex; flex-wrap: wrap;">
+	<div id="Product">
+		<h3>Mine 1</h3>
+		<img src="<%= asset_url('products/Mine-1.jpg')%>" width="352" height="352" alt="Mine 1 Külah" />
+	  <div id="Adet">
+			<span>420 Adet</span>
+		</div>
+	</div>
 
-        		<span>60 Adet</span>
-        	</div>
-            <div class="clear"></div>
-        </div>
-       	<?php
-			}
-		?>
+	<div id="Product">
+		<h3>Mine 2</h3>
+		<img src="<%= asset_url('products/Mine-2.jpg')%>" width="352" height="352" alt="Mine 2 Külah" />
+	  <div id="Adet">
+			<span>330 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Mine 3</h3>
+		<img src="<%= asset_url('products/Mine-3.jpg')%>" width="352" height="352" alt="Mine 3 Külah" />
+	  <div id="Adet">
+			<span>300 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Altın Petek</h3>
+		<img src="<%= asset_url('products/Altin-Petek.jpg')%>" width="352" height="352" alt="Altın Petek Külah" />
+	  <div id="Adet">
+			<span>280 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Petekli Kornet</h3>
+		<img src="<%= asset_url('products/Petekli-Kornet.jpg')%>" width="352" height="352" alt="Petekli Kornet Külah" />
+	  <div id="Adet">
+			<span>280 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Küçük Lale</h3>
+		<img src="<%= asset_url('products/Kucuk-Lale.jpg')%>" width="352" height="352" alt="Küçük Lale Külah" />
+	  <div id="Adet">
+			<span>300 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Büyük Lale</h3>
+		<img src="<%= asset_url('products/Buyuk-Lale.jpg')%>" width="352" height="352" alt="Büyük Lale Külah" />
+	  <div id="Adet">
+			<span>240 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Sarma Kornet</h3>
+		<img src="<%= asset_url('products/Sarma-Kornet.jpg')%>" width="352" height="352" alt="Sarma Kornet Külah" />
+	  <div id="Adet">
+			<span>150 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Endüstriyel Sarma Kornet</h3>
+		<img src="<%= asset_url('products/endustriyel-sarma-kornet.jpg')%>" width="352" height="352" alt="Endüstriyel Sarma Kornet Külah" />
+	  <div id="Adet">
+			<span>600 Adet</span>
+		</div>
+	  <div id="Adet">
+	    <span>720 Adet</span>
+	  </div>
+	</div>
+
+	<div id="Product">
+		<h3>Küp Reçellik</h3>
+		<img src="<%= asset_url('products/buyuk-kup-recellik.jpg')%>" width="352" height="352" alt="Büyük Küp Reçellik Külah" />
+	    <div id="Adet">
+			<span>400 Adet</span>
+		</div>
+	</div>
+
+	<div id="Product">
+		<h3>Kağıt Helva</h3>
+		<img src="<%= asset_url('products/kagit-helva.jpg')%>" width="352" height="352" alt="Kağıt Helva" />
+		<div id="Adet">
+			<span>60 Adet</span>
+		</div>
+	</div>
+</div>
