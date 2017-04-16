@@ -14,8 +14,84 @@
  *= require_self
  */
 
-.container {
+@media (max-width: 600px) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .navbar-fixed-bottom {
+    position: inherit !important;
+  }
+
+  .nav-tabs {
+    margin: 0 !important;
+  }
+
+  .footer-distributed {
+    padding: 0 !important;
+  }
+  .footer-right {
+    width: auto !important;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .main {
+    width: 100% !important;
+    margin-left: 5% !important;
+    text-align: center;
+  }
+
+  .product {
+    margin-left: 15% !important;
+  }
+}
+
+h4 {
+  font-size: 22px !important;
+}
+
+.footnote-text {
+  font-size: 16px;
+}
+
+.container-fluid {
   font-family: 'EB Garamond', serif;
+}
+
+.row {
+  display: flex;
+}
+
+.main {
+  margin-left: 5%;
+  padding-bottom: 15%;
+  color: #00659B;
+}
+
+.side-nav {
+  border-width: 3px;
+  border-right-color: #00659B;
+  border-radius: 2px;
+  border-right-style: solid;
+  height: auto;
+  width: 15%;
+  color: #00659B;
+}
+
+.side-nav li {
+  font-size: 20px !important;
+  margin-bottom: 7px;
+}
+
+.side-nav a {
+  color: #00659B;
+}
+
+.side-nav a:hover {
+  color: grey;
 }
 
 .footer-distributed {
@@ -25,7 +101,7 @@
   width: 100%;
   text-align: left;
   font: bold 16px;
-  padding: 55px 50px;
+  padding: 20px;
   margin-top: 80px;
   display: inline-block;
   color: white;
@@ -56,10 +132,16 @@
 
 .footer-left {
  width: 70%;
+ margin-top: 30px;
+ margin-left: 20px;
 }
 
 .footer-right {
  width: 20%;
 }
 
+.product {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
  .
