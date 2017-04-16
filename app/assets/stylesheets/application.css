@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+  font-family: 'EB Garamond', serif;
+}
+
+.footer-distributed {
+  background-color: #00659B;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 55px 50px;
+  margin-top: 80px;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  margin: 0;
+}
+.footer-div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-div-content{
+  display: inline-flex;
+}
+
+.footer-div-content img {
+  margin-left: 15px;
+}
+
+.footer-div-content p {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.footer-div-content a {
+  color: white;
+}
+
+.footer-left {
+ width: 70%;
+}
+
+.footer-right {
+ width: 20%;
+}
+
+ .
