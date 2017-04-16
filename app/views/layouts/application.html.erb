@@ -3,21 +3,50 @@
   <head>
     <title>Karacagida</title>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="container-fluid">
     <nav>
-      <a href="/">Ana Sayfa</a>
-      <a href="/about_us">Hakkımızda</a>
-      <a href="/certificates">Kalite</a>
-      <a href="/products">Ürünler</a>
-      <a href="/production">Üretim</a>
-      <a href="/social_contribution">Sosyal Sorumluluk</a>
-      <a href="/contact">İletişim</a>
+      <ul class="nav nav-tabs">
+        <li><a role="presentation" href="/">Ana Sayfa</a></li>
+        <li><a role="presentation" href="/about_us">Hakkımızda</a></li>
+        <li><a role="presentation" href="/certificates">Kalite</a></li>
+        <li><a role="presentation" href="/products">Ürünler</a></li>
+        <li><a role="presentation" href="/production">Üretim</a></li>
+        <li><a role="presentation" href="/social_contribution">Sosyal Sorumluluk</a></li>
+        <li><a role="presentation" href="/contact">İletişim</a></li>
+      </ul>
     </nav>
-    <%= yield %>
+
+    <div class="row">
+      <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+          <li><h6>Ürünlerimiz</h6></li>
+          <li><a href="">Mine 1</a></li>
+          <li><a href="">Mine 2</a></li>
+          <li><a href="">Mine 3</a></li>
+          <li><a href="">Altın Petek</a></li>
+          <li><a href="">Petekli Kornet</a></li>
+          <li><a href="">Lale</a></li>
+          <li><a href="">Büyük Lale</a></li>
+          <li><a href="">Sarma Kornet</a></li>
+          <li><a href="">End. Sarma Kornet</a></li>
+          <li><a href="">Kup Reçellik</a></li>
+          <li><a href="">Kağıt Helva</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-10">
+        <%= yield %>
+      <div>
+
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
