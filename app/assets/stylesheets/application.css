@@ -19,6 +19,16 @@
     padding: 0 !important;
   }
 
+  .homepage {
+    margin: 0 !important;
+    margin-right: 20px !important;
+  }
+
+  .homepage img {
+    width: 90%;
+    height: 90%;
+  }
+
   .navbar-fixed-bottom {
     position: inherit !important;
   }
@@ -67,6 +77,17 @@
   .product {
     margin-left: 15% !important;
   }
+}
+
+.homepage {
+  margin-left:20%;
+}
+
+.homepage__image {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
 }
 
 h4 {
