@@ -1,0 +1,14 @@
+<form style="width: 70%;" method="POST" action="/contacts">
+  <%= simple_form_for @contact do |f| %>
+		<h4><%= f.label :name, "Ad-Soyad" %></h4>
+    <%= f.input :name, :input_html => { :class => "form-control" }, :required => true, :label => false, :placeholder => "Adınızı ve soyadınızı yazın."%>
+		<h4><%= f.label :email, "E-posta" %></h4>
+		<%= f.input :email, :input_html => { :class => "form-control" }, :type => "email", :label => false, :required => true, :placeholder => "Elektronik posta adresinizi yazın." %>
+		<h4><%= f.label :message, "Mesaj" %></h4>
+		<%= f.input :message, :input_html => { :class => "form-control" }, :as => :text, :label => false, :required => true, :placeholder => "Mesajınızı yazın." %>
+    <div>
+      </br>
+      <%= f.submit "Gönder", :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</form>
