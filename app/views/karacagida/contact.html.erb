@@ -1,60 +1,41 @@
 <h2>İletişim</h2>
 
   <div id="Contact">
-  <?
- if(!$this->HideForm) { ?>
      <form id="IletisimFormu" name="IletisimFormu" enctype="multipart/form-data" method="post" title="İletişim formu">
-        <fieldset>
       <div class="Bother">
           <div class="Both">
               <label for="Name">Adı :</label>
               <input type="text" name="Name"  id="Name" value="" maxlength="32"  title="Lütfen adınızı yazınız." class="Small" /><br />
-              <div class="err"><? $this->Form->renderError('Name');?></div>
           </div>
           <div class="Both">
               <label for="Surname">Soyadı :</label>
               <input name="Surname" id="Surname" type="text" value="" title="Soyadınızı yazın." class="Small" /><br />
-              <div class="err"><? $this->Form->renderError('Surname');?></div>
           </div>
-          <div class="clear"></div>
       </div>
       <div class="Bother">
           <div class="Both">
               <label for="Phone">Telefon :</label>
               <input name="Phone" id="Phone" type="text" value="" title="Telefonunuzu yazın." class="Small" /><br />
-              <div class="err"><? $this->Form->renderError('Phone');?></div>
           </div>
           <div class="Both">
               <label for="Email">E-Posta :</label>
               <input name="Email" id="Email" type="text" value="" title="Elektronik posta adresinizi yazın." class="Small" /><br />
-              <div class="err"><? $this->Form->renderError('Email');?></div>
           </div>
-          <div class="clear"></div>
       </div>
 
       <div class="Bother">
               <label for="Subject">Konu :</label>
               <input name="Subject" id="Subject" type="text" value="" title="Mesajınızın konusunu yazın."  /><br />
-              <div class="err"><? $this->Form->renderError('Subject'); ?></div>
           <div class="clear"></div>
       </div>
       <label for="Message">Mesaj :</label>
       <div class="textarea">
-          <textarea name="Message" id="Message" title="Mesajınızı yazın."><? /*=(isset($Page->Form->Message)) ? $Page->Form->Message : ''*/ ?></textarea><br />
-          <div class="err"><? $this->Form->renderError('Message');?></div>
+          <textarea name="Message" id="Message" title="Mesajınızı yazın."></textarea><br />
       </div>
       <input name="Submit" id="Submit" type="submit" class="Submit" value="Gönder" />
       </fieldset>
     </form>
-    <? }  else { ?>
-     <p>Sayın  <strong><?=$this->Form->Name?> <?=$this->Form->Surname?></strong>;<br />
+     <!-- <p>Sayın  <strong><?=$this->Form->Name?> <?=$this->Form->Surname?></strong>;<br />
   Mesajınız yetkililere ulaştı. En kısa zamanda sizinle telefon veya elektronik posta yoluyla iletişime geçecek.
-  </p><br />
-
-    <? } ?>
-
-         <strong> Address : </strong>Kemalpaşa Yolu 5. Km Çınarköy - Kemalpaşa / İzmir <br />
-          <strong>Phone : </strong>+90 232 878 90 60 (pbx) <br />
-          <strong>Fax :</strong> +90 232 878 92 34 <br />
-          <strong>E-Mail :</strong> info@karacagida.com
+  </p><br /> -->
   </div>
