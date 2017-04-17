@@ -8,10 +8,6 @@ class KaracagidaController < ApplicationController
 		render :certificates
 	end
 
-	def contact
-		render :contact
-	end
-
 	def production
 		render :production
 	end
