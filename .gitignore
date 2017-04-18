@@ -17,4 +17,4 @@
 .byebug_history
 
 # Ignore unused images
-/images/unused
+app/assets/images/unused/
