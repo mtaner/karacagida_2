@@ -1,57 +1,9 @@
 <h2>Ürünler</h2>
 <div style="display:flex; flex-wrap: wrap;">
+	<% @products.each do |product| %>
 	<div class="product">
-		<h4>Mine 1</h4>
-		<img src="<%= asset_url('products/Mine-1.jpg')%>" width="250" height="250" alt="Mine 1 Külah" />
+		<h4><%= product.last.fetch("product_name") %></h4>
+		<img src="<%= asset_url("#{product.last.fetch("image_path")}")%>" width="250" height="250" alt=product.last.fetch("product_name") />
 	</div>
-
-	<div class="product">
-		<h4>Mine 2</h4>
-		<img src="<%= asset_url('products/Mine-2.jpg')%>" width="250" height="250" alt="Mine 2 Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Mine 3</h4>
-		<img src="<%= asset_url('products/Mine-3.jpg')%>" width="250" height="250" alt="Mine 3 Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Altın Petek</h4>
-		<img src="<%= asset_url('products/Altin-Petek.jpg')%>" width="250" height="250" alt="Altın Petek Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Petekli Kornet</h4>
-		<img src="<%= asset_url('products/Petekli-Kornet.jpg')%>" width="250" height="250" alt="Petekli Kornet Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Küçük Lale</h4>
-		<img src="<%= asset_url('products/Kucuk-Lale.jpg')%>" width="250" height="250" alt="Küçük Lale Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Büyük Lale</h4>
-		<img src="<%= asset_url('products/Buyuk-Lale.jpg')%>" width="250" height="250" alt="Büyük Lale Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Sarma Kornet</h4>
-		<img src="<%= asset_url('products/Sarma-Kornet.jpg')%>" width="250" height="250" alt="Sarma Kornet Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Endüstriyel Sarma Kornet</h4>
-		<img src="<%= asset_url('products/endustriyel-sarma-kornet.jpg')%>" width="250" height="250" alt="Endüstriyel Sarma Kornet Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Küp Reçellik</h4>
-		<img src="<%= asset_url('products/buyuk-kup-recellik.jpg')%>" width="250" height="250" alt="Büyük Küp Reçellik Külah" />
-	</div>
-
-	<div class="product">
-		<h4>Kağıt Helva</h4>
-		<img src="<%= asset_url('products/kagit-helva.jpg')%>" width="250" height="250" alt="Kağıt Helva" />
-	</div>
+	<% end %>
 </div>
