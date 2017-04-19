@@ -17,6 +17,7 @@
 @media (max-width: 600px) {
   .container-fluid {
     padding: 0 !important;
+    margin: 0 !important;
   }
 
   .homepage {
@@ -113,6 +114,8 @@ h4 {
 
 .container-fluid {
   font-family: 'EB Garamond', serif;
+  margin-left: 40px;
+  margin-bottom: 80px;
 }
 
 .row {
