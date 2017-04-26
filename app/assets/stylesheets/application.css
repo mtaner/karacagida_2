@@ -198,3 +198,12 @@ h4 {
 .footer-right {
  width: 20%;
 }
+
+.delete_button {
+  width: 60%;
+}
+
+#delete_form {
+  text-align: center;
+  padding-right: 10px;
+}

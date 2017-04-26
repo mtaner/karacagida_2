@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get "/contacts", to: "contacts#new"
   post "/contacts", to: "contacts#create"
   get "/admin", to: "admin#index"
+  post "/admin", to: "admin#upload"
+  delete "/admin/:certificate", to: "admin#destroy"
 end

@@ -1,11 +1,15 @@
 <h2>Sertifikalar</h2>
 <div>
-  <a class="pop-up" href="" rel="lightbox[cert]" title="Dondurma Külahı - Kağıt Helva Çalışma İzni ve Gıda Sicili Belgesi">
-    <img id="isletme-kayit" src="<%= asset_url('certificates/isletme-kayit.jpg')%>" width="240" height="320" alt="Dondurma Külahı - Kağıt Helva Çalışma İzni ve Gıda Sicili Belgesi" title="Dondurma Külahı - Kağıt Helva Çalışma İzni ve Gıda Sicili Belgesi" style="margin-right:20px;margin-bottom:20px" />
-  </a>
-  <a class="pop-up" href="" rel="lightbox[cert]" title="Dondurma Külahı - Kağıt Helva Çalışma İzni ve Gıda Sicili Belgesi">
-    <img id="gida-sicili" src="<%= asset_url('certificates/sert.jpg')%>" width="240" height="320" alt="Dondurma Külahı - Kağıt Helva Çalışma İzni ve Gıda Sicili Belgesi" title="Dondurma Külahı - Kağıt Helva Çalışma İzni ve Gıda Sicili Belgesi" style="margin-right:20px;margin-bottom:20px" />
-  </a>
+  <%= Dir.foreach('public/uploads/').with_index do |certificate, i| %>
+    <% next if certificate == '.' || certificate == '..' %>
+    <a class="pop-up" href="" rel="lightbox[cert]">
+      <img
+        id="<%= "#{i}" %>" src=" <%= image_path "/uploads/#{certificate}" %>"
+        width="240" height="320" alt="<%= certificate.split(".").first %>"
+        style="margin-right:20px;margin-bottom:20px"
+        />
+    </a>
+  <% end %>
 </div>
 
 <div class="modal" id="imagemodal" tabindex="-1" role="dialog">

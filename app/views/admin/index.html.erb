@@ -1,1 +1,37 @@
 <h1> Admin Sayfasi </h1>
+
+<h4>
+	<span>
+		Websitesindeki sertifikalari bu sayfadan yeni sertifika yukleyerek degistirebilirsiniz.
+		Sertifika adi websitesinde goruntulenecektir.
+		Lutfen sertifikalari pdf olarak yuklemeyiniz.
+	 </span>
+</h4>
+
+<div style="display:flex; width: 80%; margin-bottom: 20px;">
+  <%= Dir.foreach('public/uploads/').with_index do |certificate, i| %>
+    <% next if certificate == '.' || certificate == '..' %>
+		<% image_source = image_path "/uploads/#{certificate}" %>
+		<% certificate_to_delete = certificate.split(".").join("+") %>
+
+		<div>
+			<%= form_tag("/admin/#{certificate_to_delete}", method: :delete, id: "delete_form") do %>
+			<%= submit_tag "Sil", class: "btn btn-primary delete_button"%>
+			<% end %>
+
+	    <img
+	      id="<%= "#{i}" %>" src="<%= image_source %>"
+	      width="240" height="320" alt="<%= certificate.split(".").first %>"
+	      style="margin-right:20px;"
+	    	/>
+		</div>
+  <% end %>
+
+</div>
+
+<%= form_tag({action: :upload}, multipart: true) do %>
+  <%= file_field_tag 'certificate' %>
+	</br>
+	<%= text_field_tag 'certificate_name', "Sertifika adi"%>
+	<%= submit_tag "Yukle", class: "btn btn-primary" %>
+<% end %>
