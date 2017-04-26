@@ -1,14 +1,20 @@
-<form style="width: 70%;" method="POST" action="/contacts">
-  <%= simple_form_for @contact do |f| %>
-		<h4><%= f.label :name, "Ad-Soyad" %></h4>
-    <%= f.input :name, :input_html => { :class => "form-control" }, :required => true, :label => false, :placeholder => "Adınızı ve soyadınızı yazın."%>
-		<h4><%= f.label :email, "E-posta" %></h4>
-		<%= f.input :email, :input_html => { :class => "form-control" }, :type => "email", :label => false, :required => true, :placeholder => "Elektronik posta adresinizi yazın." %>
-		<h4><%= f.label :message, "Mesaj" %></h4>
-		<%= f.input :message, :input_html => { :class => "form-control" }, :as => :text, :label => false, :required => true, :placeholder => "Mesajınızı yazın." %>
+<div style="width: 70%;">
+  <%= form_tag "/contacts" do %>
+		<h4><label for="contact_name">Ad-Soyad</label></h4>
+    <div class="input string required contact_name">
+      <input class="string required form-control" required="required" aria-required="true" placeholder="Adınızı ve soyadınızı yazın." type="text" name="contact[name]" id="contact_name">
+    </div>
+		<h4><label for="contact_email">E-posta</label></h4>
+		<div class="input email required contact_email">
+      <input class="string email required form-control" required="required" aria-required="true" placeholder="Elektronik posta adresinizi yazın." type="email" name="contact[email]" id="contact_email">
+    </div>
+		<h4><label for="contact_message">Mesaj</label></h4>
+		<div class="input text required contact_message">
+      <textarea class="text required form-control" required="required" aria-required="true" placeholder="Mesajınızı yazın." name="contact[message]" id="contact_message"></textarea>
+    </div>
     <div>
-      </br>
-      <%= f.submit "Gönder", :class=> "btn btn-primary" %>
+      <br>
+      <input type="submit" name="commit" value="Gönder" class="btn btn-primary" data-disable-with="Gönder">
     </div>
   <% end %>
-</form>
+</div>
