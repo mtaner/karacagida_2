@@ -41,6 +41,7 @@
   .footer-distributed {
     padding: 0 !important;
   }
+
   .footer-right {
     width: auto !important;
   }
@@ -165,6 +166,7 @@ h4 {
   vertical-align: middle;
   margin: 0;
 }
+
 .footer-div {
   display: inline-block;
   vertical-align: top;
@@ -196,5 +198,3 @@ h4 {
 .footer-right {
  width: 20%;
 }
-
- .

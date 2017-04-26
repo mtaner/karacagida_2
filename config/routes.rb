@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "/social_contribution", to: "karacagida#socialcont"
   get "/contacts", to: "contacts#new"
   post "/contacts", to: "contacts#create"
+  get "/admin", to: "admin#index"
 end
