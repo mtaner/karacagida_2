@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get "/admin", to: "admin#index"
   post "/admin", to: "admin#upload"
   delete "/admin/:certificate", to: "admin#destroy"
+  get "/language/:lang", to: "language#change_locale", as: "language"
 end
