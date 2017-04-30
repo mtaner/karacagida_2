@@ -9,7 +9,7 @@ class AdminController < ApplicationController
 		title_tag = params[:certificate_name]
 		file_name = title_tag.split(" ").join("_") + "."
 		extension = uploaded_certificate.content_type.split("/").last
-		File.open(Rails.root.join('public', 'uploads', title_tag + extension), 'wb') do |file|
+		File.open(Rails.root.join('public', 'uploads', file_name + extension), 'wb') do |file|
     	file.write(uploaded_certificate.read)
 		end
 
