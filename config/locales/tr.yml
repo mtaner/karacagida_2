@@ -2,9 +2,58 @@ tr:
   about_us:
     title: "Hakkımızda"
     info: "Külah ve gofret üretimi amacı ile 1956 yılında İzmir' de
-          küçük bir atölyede kurulan firmamız bu yıllarda manüel el makinaları
-          ile üretim yapmakta idi. 1966 yılında külah üretimi amacı ile fabrika
-          kuruluş çalışmalarına başlanmış ve 1980 yılında Türkiye' de külah üretiminde
-          ilk fabrikalardan biri olma unvanı ile gelişim sürecine devam etmiştir.
-          1984 yılında tam otomatik makine parkuru ile üretim kapasitesini artırmış
-          ve Türk tüketicisini ilk defa kornetto (sarma kornet) ile tanıştırmıştır."
+    küçük bir atölyede kurulan firmamız bu yıllarda manüel el makinaları
+    ile üretim yapmakta idi. 1966 yılında külah üretimi amacı ile fabrika
+    kuruluş çalışmalarına başlanmış ve 1980 yılında Türkiye' de külah üretiminde
+    ilk fabrikalardan biri olma unvanı ile gelişim sürecine devam etmiştir.
+    1984 yılında tam otomatik makine parkuru ile üretim kapasitesini artırmış
+    ve Türk tüketicisini ilk defa kornetto (sarma kornet) ile tanıştırmıştır."
+  social_responsibility:
+    title: "Karaca Gıda'dan Eğitime Destek"
+    info: "Karaca Gıda 1956' dan bugüne yaptığı yatırımlar dışında eğitime ve çocuklara
+		verdiği önemi 2003 senesinde Cumhuriyetin 80. yıl dönümünde yaptırdığı ilköğretim
+		okulunu Milli Eğitime teslim ederek ülke kültürüne' de hizmet etmiştir.
+		Beş köyün ortak kullandığı ilköğretim okulumuz Yakaköy' de bulunmaktadır.
+		İnşaatı 6 ay gibi kısa bir sürede tamamlanmış olup 3 katlı ve 18 derslik kapasitesi
+		ile öğrencilere eğitim vermektedir."
+  production:
+    title: "Üretim"
+    info: "Günümüzde Karaca Gıda üretimini el değmeden ve BRC Gıda Güvenliği ve
+    Kalite Yönetim Standardının gereklerini yerine getirerek yapmaktadır.
+    Bu noktada üretimimizin ana unsurlarından biri olan personelimiz BRC
+    Standardının bir parçası olan HACCP konusunda bilgili ve külah üretimi
+    konusunda tecrübelidir. Takım ruhuyla hareket eden ekibimiz üretim heyecanını
+    içinde barındırmaktadır."
+  contact_us:
+    title:
+      form_name_surname: "Ad-Soyad:"
+      form_email: "E-posta:"
+      form_message: "Mesaj:"
+      form_submit: "Gönder"
+    placeholder:
+      form_name_surname: "Adınızı ve soyadınızı yazın."
+      form_email: "Elektronik posta adresinizi yazın."
+      form_message: "Mesajınızı yazın."
+  navbar:
+    main_page: "Ana Sayfa"
+    about_us: "Hakkımızda"
+    certificates: "Kalite"
+    products: "Ürünler"
+    production: "Üretim"
+    social_responsibility: "Sosyal Sorumluluk"
+    contact_us: "İletişim"
+  products:
+    title: "Ürünlerimiz"
+    mine-1: "Mine 1"
+    mine-2: "Mine 2"
+    mine-3: "Mine 3"
+    altin-petek: "Altın Petek"
+    petekli-kornet: "Petekli Kornet"
+    kucuk-lale: "Lale"
+    buyuk-lale: "Büyük Lale"
+    sarma-kornet: "Sarma Kornet"
+    end-sarma-kornet: "Endüstriyel Sarma Kornet"
+    kup-recellik: "Küp Reçellik"
+    kagit-helva: "Kağıt Helva"
+  logo:
+    image_tag: "1956.png"

@@ -1,20 +1,20 @@
 <div style="width: 70%;">
   <%= form_tag "/contacts" do %>
-		<h4><label for="contact_name">Ad-Soyad</label></h4>
+		<h4><label for="contact_name"><%= t('contact_us.title.form_name_surname')%></label></h4>
     <div class="input string required contact_name">
-      <input class="string required form-control" required="required" aria-required="true" placeholder="Adınızı ve soyadınızı yazın." type="text" name="contact[name]" id="contact_name">
+      <input class="string required form-control" required="required" aria-required="true" placeholder="<%= t('contact_us.placeholder.form_name_surname')%>" type="text" name="contact[name]" id="contact_name">
     </div>
-		<h4><label for="contact_email">E-posta</label></h4>
+		<h4><label for="contact_email"><%= t('contact_us.title.form_email')%></label></h4>
 		<div class="input email required contact_email">
-      <input class="string email required form-control" required="required" aria-required="true" placeholder="Elektronik posta adresinizi yazın." type="email" name="contact[email]" id="contact_email">
+      <input class="string email required form-control" required="required" aria-required="true" placeholder="<%= t('contact_us.placeholder.form_email')%>" type="email" name="contact[email]" id="contact_email">
     </div>
-		<h4><label for="contact_message">Mesaj</label></h4>
+		<h4><label for="contact_message"><%= t('contact_us.title.form_message')%></label></h4>
 		<div class="input text required contact_message">
-      <textarea class="text required form-control" required="required" aria-required="true" placeholder="Mesajınızı yazın." name="contact[message]" id="contact_message"></textarea>
+      <textarea class="text required form-control" required="required" aria-required="true" placeholder="<%= t('contact_us.placeholder.form_message')%>" name="contact[message]" id="contact_message"></textarea>
     </div>
     <div>
       <br>
-      <input type="submit" name="commit" value="Gönder" class="btn btn-primary" data-disable-with="Gönder">
+      <input type="submit" name="commit" value="<%= t('contact_us.title.form_submit')%>" class="btn btn-primary" data-disable-with="Gönder">
     </div>
   <% end %>
 </div>

@@ -1,34 +1,34 @@
 - products:
     mine-1:
-      product_name: Mine 1
+      product_name: mine-1
       image_path: products/Mine-1.jpg
     mine-2:
-      product_name: Mine 2
+      product_name: mine-2
       image_path: products/Mine-2.jpg
     mine-3:
-      product_name: Mine 3
+      product_name: mine-3
       image_path: products/Mine-3.jpg
     altin-petek:
-      product_name: Altın Petek
+      product_name: altin-petek
       image_path: products/Altin-Petek.jpg
     petekli-kornet:
-      product_name: Petekli Kornet
+      product_name: petekli-kornet
       image_path: products/Petekli-Kornet.jpg
     kucuk-lale:
-      product_name: Küçük Lale
+      product_name: kucuk-lale
       image_path: products/Kucuk-Lale.jpg
     buyuk-lale:
-      product_name: Büyük Lale
+      product_name: buyuk-lale
       image_path: products/Buyuk-Lale.jpg
     sarma-kornet:
-      product_name: Sarma Kornet
+      product_name: sarma-kornet
       image_path: products/Sarma-Kornet.jpg
     end-sarma-kornet:
-      product_name: Endüstriyel Sarma Kornet
+      product_name: end-sarma-kornet
       image_path: products/endustriyel-sarma-kornet.jpg
     kup-recellik:
-      product_name: Küp Reçellik
+      product_name: kup-recellik
       image_path: products/buyuk-kup-recellik.jpg
     kagit-helva:
-      product_name: Kağıt Helva
+      product_name: kagit-helva
       image_path: products/kagit-helva.jpg

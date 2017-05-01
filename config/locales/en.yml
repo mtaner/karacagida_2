@@ -23,9 +23,59 @@ en:
   about_us:
     title: "About us"
     info: "Our company, which was established in a small workshop in 1956 in
-          order to produce ice cream cones and wafers, was manufacturing with manuel
-          machines during those years. In 1966 we set up a factory for ice cream cone
-          manufacturing and in 1980 our business rapidly grow as one of the first ice
-          cream cone manufacturer in Turkey. In 1984 fully authomated machines raised
-          our production capacity and we introduce sugar cone to Turkish consumers for
-          the first time."
+    order to produce ice cream cones and wafers, was manufacturing with manuel
+    machines during those years. In 1966 we set up a factory for ice cream cone
+    manufacturing and in 1980 our business rapidly grow as one of the first ice
+    cream cone manufacturer in Turkey. In 1984 fully authomated machines raised
+    our production capacity and we introduce sugar cone to Turkish consumers for
+    the first time."
+  social_responsibility:
+    title: "Karaca Food Industry Supports Education"
+    info: "Karaca food industry besides its investments since 1956, serves the
+    culture of the country and shows the importance that it gives to the childeren and
+    education by handing over a primary school that was being built in 2003,
+    the 80th anniversary of Turkish Republic.
+    Our school,gives education to the students of 5 villages, located in Yakaköy.
+    The construction of it was being completed in 6 months. With its six floors
+    and eigthteen classes the primary education is being given to the children."
+  production:
+    title: "Production"
+    info: "Today Karaca food industry manufactures its goods according to the
+    ISO 2200 standarts. At this point our employees, one of the primary components
+    of Karaca food industry, are well informed about the implementation of HACCP
+    (Hazards Analysis Critical Control Points), a part of ISO 2200 standarts,
+    and well-experienced in ice cream cone producing. Our staff, moved by the team
+    spirit, has the enthusiasm of manufacturing inside."
+  contact_us:
+    title:
+      form_name_surname: "Name-Surname:"
+      form_email: "Email:"
+      form_message: "Message:"
+      form_submit: "Send"
+    placeholder:
+      form_name_surname: "Enter your name and surname."
+      form_email: "Enter your email address."
+      form_message: "Enter your message."
+  navbar:
+    main_page: "Home"
+    about_us: "About us"
+    certificates: "Quality"
+    products: "Products"
+    production: "Production"
+    social_responsibility: "Social Contribution"
+    contact_us: "Contact us"
+  products:
+    title: "Products"
+    mine-1: "Mine 1"
+    mine-2: "Mine 2"
+    mine-3: "Mine 3"
+    altin-petek: "Golden Honeycomb"
+    petekli-kornet: "Honeycomb Cone"
+    kucuk-lale: "Tulip"
+    buyuk-lale: "Big tulip"
+    sarma-kornet: "Sugar Cone"
+    end-sarma-kornet: "Ind. Sugar Cone"
+    kup-recellik: "Cup Cone"
+    kagit-helva: "Wafer"
+  logo:
+    image_tag: "1956-EN.png"

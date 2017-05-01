@@ -14,13 +14,13 @@
     <nav>
       <h4>
       <ul class="nav nav-tabs" style="margin-left: 15%;">
-        <li><a role="presentation" href="/">Ana Sayfa</a></li>
-        <li><a role="presentation" href="/about_us">Hakkımızda</a></li>
-        <li><a role="presentation" href="/certificates">Kalite</a></li>
-        <li><a role="presentation" href="/products">Ürünler</a></li>
-        <li><a role="presentation" href="/production">Üretim</a></li>
-        <li><a role="presentation" href="/social_contribution">Sosyal Sorumluluk</a></li>
-        <li><a role="presentation" href="/contacts">İletişim</a></li>
+        <li><a role="presentation" href="/"><%= t('navbar.main_page') %></a></li>
+        <li><a role="presentation" href="/about_us"><%= t('navbar.about_us') %></a></li>
+        <li><a role="presentation" href="/certificates"><%= t('navbar.certificates') %></a></li>
+        <li><a role="presentation" href="/products"><%= t('navbar.products') %></a></li>
+        <li><a role="presentation" href="/production"><%= t('navbar.production') %></a></li>
+        <li><a role="presentation" href="/social_contribution"><%= t('navbar.social_responsibility') %></a></li>
+        <li><a role="presentation" href="/contacts"><%= t('navbar.contact_us') %></a></li>
         <h5><li><a href="<%= language_path(:tr) %>">TR</a>|<a href="<%= language_path(:en) %>">EN</a></li></h5>
       </ul>
     </h4>
@@ -29,18 +29,18 @@
     <div class="row">
       <div class="col-md-2 side-nav">
         <ul class="nav nav-pills nav-stacked">
-          <li><h4>Ürünlerimiz</h4></li>
-          <li><a href="/products/mine-1">Mine 1</a></li>
-          <li><a href="/products/mine-2">Mine 2</a></li>
-          <li><a href="/products/mine-3">Mine 3</a></li>
-          <li><a href="/products/altin-petek">Altın Petek</a></li>
-          <li><a href="/products/petekli-kornet">Petekli Kornet</a></li>
-          <li><a href="/products/kucuk-lale">Lale</a></li>
-          <li><a href="/products/buyuk-lale">Büyük Lale</a></li>
-          <li><a href="/products/sarma-kornet">Sarma Kornet</a></li>
-          <li><a href="/products/end-sarma-kornet">End. Sarma Kornet</a></li>
-          <li><a href="/products/kup-recellik">Kup Reçellik</a></li>
-          <li><a href="/products/kagit-helva">Kağıt Helva</a></li>
+          <li><h4><%= t('products.title') %></h4></li>
+          <li><a href="/products/mine-1"><%= t('products.mine-1') %></a></li>
+          <li><a href="/products/mine-2"><%= t('products.mine-2') %></a></li>
+          <li><a href="/products/mine-3"><%= t('products.mine-3') %></a></li>
+          <li><a href="/products/altin-petek"><%= t('products.altin-petek') %></a></li>
+          <li><a href="/products/petekli-kornet"><%= t('products.petekli-kornet') %></a></li>
+          <li><a href="/products/kucuk-lale"><%= t('products.kucuk-lale') %></a></li>
+          <li><a href="/products/buyuk-lale"><%= t('products.buyuk-lale') %></a></li>
+          <li><a href="/products/sarma-kornet"><%= t('products.sarma-kornet') %></a></li>
+          <li><a href="/products/end-sarma-kornet"><%= t('products.end-sarma-kornet') %></a></li>
+          <li><a href="/products/kup-recellik"><%= t('products.kup-recellik') %></a></li>
+          <li><a href="/products/kagit-helva"><%= t('products.kagit-helva') %></a></li>
         </ul>
       </div>
 

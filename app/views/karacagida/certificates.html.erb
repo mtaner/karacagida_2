@@ -1,4 +1,3 @@
-<h2>Sertifikalar</h2>
 <div>
   <%= Dir.foreach('public/uploads/').with_index do |certificate, i| %>
     <% next if certificate == '.' || certificate == '..' %>
