@@ -1,34 +1,45 @@
 - products:
     mine-1:
       product_name: mine-1
+      amount: "400"
       image_path: products/Mine-1.jpg
     mine-2:
       product_name: mine-2
+      amount: "330"
       image_path: products/Mine-2.jpg
     mine-3:
       product_name: mine-3
+      amount: "300"
       image_path: products/Mine-3.jpg
     altin-petek:
       product_name: altin-petek
+      amount: "280"
       image_path: products/Altin-Petek.jpg
     petekli-kornet:
       product_name: petekli-kornet
+      amount: "280"
       image_path: products/Petekli-Kornet.jpg
     kucuk-lale:
       product_name: kucuk-lale
+      amount: "300"
       image_path: products/Kucuk-Lale.jpg
     buyuk-lale:
       product_name: buyuk-lale
+      amount: "240"
       image_path: products/Buyuk-Lale.jpg
     sarma-kornet:
       product_name: sarma-kornet
+      amount: "150"
       image_path: products/Sarma-Kornet.jpg
     end-sarma-kornet:
       product_name: end-sarma-kornet
+      amount: "600 | 720"
       image_path: products/endustriyel-sarma-kornet.jpg
     kup-recellik:
       product_name: kup-recellik
+      amount: "400"
       image_path: products/buyuk-kup-recellik.jpg
     kagit-helva:
       product_name: kagit-helva
+      amount: "60"
       image_path: products/kagit-helva.jpg

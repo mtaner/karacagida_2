@@ -79,3 +79,6 @@ en:
     kagit-helva: "Wafer"
   logo:
     image_tag: "1956-EN.png"
+  product_amount:
+    text: "Amount:"
+    box: "boxes"

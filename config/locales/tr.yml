@@ -57,3 +57,6 @@ tr:
     kagit-helva: "Kağıt Helva"
   logo:
     image_tag: "1956.png"
+  product_amount:
+    text: "Adet:"
+    box: "kutu"
