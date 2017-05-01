@@ -107,6 +107,14 @@ h4 {
 .product {
   margin-left: 10px;
   margin-bottom: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.product:hover {
+  border-style: solid;
+  border-color: #00659B;
+  text-decoration: none;
 }
 
 .footnote-text {
@@ -124,7 +132,7 @@ h4 {
 }
 
 .main {
-  margin-left: 5%;
+  margin-left: 5px;
   padding-bottom: 15%;
   color: #00659B;
 }

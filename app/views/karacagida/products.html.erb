@@ -2,8 +2,10 @@
 <div style="display:flex; flex-wrap: wrap;">
 	<% @products.each do |product| %>
 	<div class="product">
+		<a href="<%= "products/#{product.last.fetch("product_name")}" %>">
 		<h4><%= t("products.#{product.last.fetch("product_name")}") %></h4>
 		<img src="<%= asset_url("#{product.last.fetch("image_path")}")%>" width="250" height="250" alt=product.last.fetch("product_name") />
+		</a>
 	</div>
 	<% end %>
 </div>

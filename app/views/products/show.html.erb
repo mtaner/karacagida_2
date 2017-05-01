@@ -1,5 +1,5 @@
 <div style="margin:50px;">
-	<div class="product">
+	<div>
 		<h4><%= t("products.#{@product.fetch("product_name")}") %></h4>
 		<img src="<%= asset_url("#{@product.fetch("image_path")}")%>" width="400" height="400" alt="<%= @product.fetch("product_name") %>" />
 		<h4><%= "#{t('product_amount.text')} #{@product.fetch("amount")} #{t('product_amount.box')}"%></h4>
